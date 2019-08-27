@@ -89,6 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1687949579559892299}
   - component: {fileID: 1687949579559892298}
+  - component: {fileID: 1951876233}
   m_Layer: 0
   m_Name: tiegui2
   m_TagString: Untagged
@@ -168,6 +169,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1951876233
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687949579559892297}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.3071688, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 0.32}
+    newSize: {x: 1.28, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.2796087, y: 0.32}
+  m_EdgeRadius: 0
 --- !u!1 &1687949579811159588
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,13 +897,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5865132927346364062, guid: 3ac3fd3a659d5d444809e5ab2db102ff,
         type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.747
+      propertyPath: m_LocalScale.x
+      value: 0.843948
       objectReference: {fileID: 0}
     - target: {fileID: 5865132927346364062, guid: 3ac3fd3a659d5d444809e5ab2db102ff,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.843948
+      propertyPath: m_LocalScale.y
+      value: 0.747
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ac3fd3a659d5d444809e5ab2db102ff, type: 3}

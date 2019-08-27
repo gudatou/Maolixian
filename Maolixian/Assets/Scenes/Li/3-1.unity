@@ -437,38 +437,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &795809071 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2701971323807897190, guid: 855b16963e711b54c98c1fb44452271f,
-    type: 3}
-  m_PrefabInstance: {fileID: 2061655434}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &795809072
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 795809071}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 2.0572057, y: 0.110065654}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 0.32}
-    newSize: {x: 2.56, y: 0.32}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 6.726824, y: 0.09986868}
-  m_EdgeRadius: 0
 --- !u!1001 &882734712
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -765,38 +733,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1548227406 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7211266049735254066, guid: 4317935dac6095b48bac3e112d8e07a8,
-    type: 3}
-  m_PrefabInstance: {fileID: 374555432}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &1548227407
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1548227406}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -1.3622079, y: 0.077712536}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 0.32}
-    newSize: {x: 1.28, y: 0.32}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4.0044155, y: 0.16457492}
-  m_EdgeRadius: 0
 --- !u!1 &1705195506
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,38 +1052,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1951876232 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1687949579559892297, guid: b1ef9d37d05f47f43a4bce9084c58aaa,
-    type: 3}
-  m_PrefabInstance: {fileID: 882734712}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &1951876233
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1951876232}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 1.3071688, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 0.32}
-    newSize: {x: 1.28, y: 0.32}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4.2796087, y: 0.32}
-  m_EdgeRadius: 0
 --- !u!1001 &2061655434
 PrefabInstance:
   m_ObjectHideFlags: 0

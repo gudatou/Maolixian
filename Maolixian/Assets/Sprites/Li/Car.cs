@@ -19,7 +19,7 @@ public class Car : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ////if(b2=null)
+        ///if(b2=null)
         //{
 
 

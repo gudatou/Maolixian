@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4234642519110473655}
   - component: {fileID: 5591762806535001775}
+  - component: {fileID: 1236218865}
   m_Layer: 0
   m_Name: wheel
   m_TagString: Untagged
@@ -79,6 +80,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1236218865
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3357337562102679737}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.32
 --- !u!1 &8885205799082132208
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,6 +229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6975981316668604244}
   - component: {fileID: 2982633975417823391}
+  - component: {fileID: 622681818}
   m_Layer: 0
   m_Name: wheel (1)
   m_TagString: Untagged
@@ -281,3 +299,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &622681818
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9140224463103695931}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.32

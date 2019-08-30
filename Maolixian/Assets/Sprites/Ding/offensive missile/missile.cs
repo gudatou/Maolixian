@@ -5,17 +5,24 @@ using UnityEngine;
 public class missile : MonoBehaviour
 {
     // Start is called before the first frame update
-    private Rigidbody2D rig;
-    public float speed = 5.0f;
+    public float speed = 5.0F;
+    public bool reverse = true;
 
     void Start()
     {
-        rig = gameObject.GetComponent<Rigidbody2D>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        rig.AddForce(new Vector3(speed, 0,0));
+        //transform.Translate = new Vector3(xPosition, 0, 0);
+        transform.Translate(Vector3.left * Time.deltaTime * speed );
+        if (reverse == false)
+        {
+            gameObject.transform.rotation =  Quaternion.Euler(new Vector3(0, 180, 0));
+            transform.Translate(Vector3.left * Time.deltaTime * -speed, Space.World);
+        }
+
     }
 }

@@ -5,11 +5,12 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
     // Start is called before the first frame update
-    private bool circle;
+    private bool circle = false;
     Vector3 mousePositionOnScreen;
 
     void Start()
     {
+        gameObject.GetComponent<Renderer>().enabled = false;
         circle = GameObject.FindGameObjectWithTag("circle");
         Transform trans = GetComponent<Transform>();
         Animation ani = GetComponent<Animation>();
@@ -23,9 +24,14 @@ public class NewBehaviourScript : MonoBehaviour
             mousePosition.z = 10;
             var world = Camera.main.ScreenToWorldPoint(mousePosition);
             gameObject.transform.position = world;
-
-            //Destroy(gameObject.GetComponent<Animator>());
+            gameObject.GetComponent<Renderer>().enabled = true;
         }
+        else
+        {
+            gameObject.GetComponent<Renderer>().enabled = false;
+        }
+
+
     }
 
 }

@@ -132,12 +132,12 @@ PrefabInstance:
     - target: {fileID: 1471456865137591409, guid: d211c65b5acd63443b86b25a10b5b3e4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.256691
+      value: -8.94
       objectReference: {fileID: 0}
     - target: {fileID: 1471456865137591409, guid: d211c65b5acd63443b86b25a10b5b3e4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.6818013
+      value: 2.76
       objectReference: {fileID: 0}
     - target: {fileID: 1471456865137591409, guid: d211c65b5acd63443b86b25a10b5b3e4,
         type: 3}
@@ -334,7 +334,7 @@ PrefabInstance:
     - target: {fileID: 5509169451325486445, guid: 41bc5db81145bb042aec083e302b214c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.12
+      value: 0.46
       objectReference: {fileID: 0}
     - target: {fileID: 5509169451325486445, guid: 41bc5db81145bb042aec083e302b214c,
         type: 3}
@@ -401,9 +401,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8b7fe4da6c0bdb41bb8be145f600ed9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  Force: 60
-  b2: {fileID: 0}
+  Speed: 5
+  forword: 0
+  Car: {fileID: 0}
+  Cat: {fileID: 0}
+--- !u!68 &1974110699
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974110693}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.259819, y: 0.14125839}
+  - {x: -0.011041641, y: 0.15134814}
+  - {x: 1.25982, y: 0.13116857}
 --- !u!1001 &2038804694
 PrefabInstance:
   m_ObjectHideFlags: 0

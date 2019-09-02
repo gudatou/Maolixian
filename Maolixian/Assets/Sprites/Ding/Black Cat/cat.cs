@@ -9,6 +9,8 @@ public class cat : MonoBehaviour
     //public Vector3 dir;
 
     // Start is called before the first frame update
+    public int Count = 0;
+    public AudioClip pick_gem;
     void Start()
     {
 
@@ -25,11 +27,30 @@ public class cat : MonoBehaviour
         {
             rd.AddForce(new Vector3(0, force, 0));
         }
+         
+
+        //private void OnCollisionEnter2D(Collision2D collision)
+        //{
+
+        //}
+
     }
+     private void OnCollisionEnter2D(Collision2D collision)
+    {
 
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-        
-    //}
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("diamond"))
+        {
+            Destroy(collision.gameObject);
+        }
 
+        if (collision.gameObject.CompareTag("diamond"))
+        {
+            AudioSource.PlayClipAtPoint(pick_gem, collision.transform.position);
+            Destroy(collision.gameObject);
+            Count++;
+        }
+    }
 }

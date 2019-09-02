@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 8756888553162190956}
   m_Layer: 0
   m_Name: hinge3
-  m_TagString: Untagged
+  m_TagString: hinge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

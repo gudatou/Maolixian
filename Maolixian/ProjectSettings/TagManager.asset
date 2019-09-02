@@ -6,6 +6,12 @@ TagManager:
   tags:
   - circle
   - Black Cat
+  - frame
+  - ball
+  - demond
+  - bat
+  - hinge
+  - diamond
   layers:
   - Default
   - TransparentFX

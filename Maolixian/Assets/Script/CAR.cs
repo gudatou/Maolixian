@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CAR : MonoBehaviour
 {
-    public float Speed = 0;
+    public float Speed = 1.0f;
     private Rigidbody2D rig = null;
     public bool forword = false;
     public GameObject Car;
@@ -26,6 +26,10 @@ public class CAR : MonoBehaviour
     }
     void Update()
     {
+        //if (Cat.transform.position.y - Car.transform.position.y < -1.5)
+        //{
+        //    transform.Translate(new Vector3(Speed, 0, 0) * Time.deltaTime);
+        //}
         //transform.Translate(new Vector3(Speed, 0, 0) * Time.deltaTime);
         //Car.transform.position += Vector3.left * Time.deltaTime;
 
@@ -36,7 +40,7 @@ public class CAR : MonoBehaviour
         Debug.Log("enter");
         if(collision.gameObject.CompareTag("Black Cat"))
            {
-            transform.Translate(new Vector3(Speed, 0, 0) * Time.deltaTime);
+            transform.Translate(new Vector3(Speed, 0, 0));
         }
         //if (Cat.transform.position.y - Car.transform.position.y < -1.5)
         //{

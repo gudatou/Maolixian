@@ -8,11 +8,16 @@ public class cat : MonoBehaviour
     private Rigidbody2D rd;
     //public Vector3 dir;
     private bool isDead = false;
+    private bool isJump = false;
+    public bool ground;
 
     // Start is called before the first frame update
     public int Count = 0;
     public AudioClip pick_gem;
     private Animator anim = null;
+
+    private bool grounded = true;
+
 
     void Start()
     {
@@ -30,6 +35,8 @@ public class cat : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             rd.AddForce(new Vector3(0, force, 0));
+            isJump = true;
+            anim.SetBool("jump",isJump);
         }
          
 

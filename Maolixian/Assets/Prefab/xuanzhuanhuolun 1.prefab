@@ -36,7 +36,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.00000003257449, y: -0.14}
-  m_ConnectedAnchor: {x: -0.0060396194, y: 1.221441}
+  m_ConnectedAnchor: {x: -0.0060394406, y: 1.2214411}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -162,7 +162,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.0678902, y: -0.025364963}
+  m_ConnectedAnchor: {x: 1.0678902, y: -0.025365075}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 200
@@ -289,7 +289,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -1.1439605, y: -0.034148082}
+  m_ConnectedAnchor: {x: -1.1439605, y: -0.034148194}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 200
@@ -330,7 +330,7 @@ GameObject:
   - component: {fileID: 830741683714714617}
   m_Layer: 0
   m_Name: xuanzhuanhuolun 1
-  m_TagString: Untagged
+  m_TagString: Huolun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -439,7 +439,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.12, y: 0}
-  m_ConnectedAnchor: {x: -2.1188903, y: 0.7353649}
+  m_ConnectedAnchor: {x: 2.1899998, y: 4.28}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 200
@@ -484,7 +484,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.01, y: -0.12}
-  m_ConnectedAnchor: {x: 1.2518826, y: -0.03310418}
+  m_ConnectedAnchor: {x: 1.2518828, y: -0.03310418}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -529,7 +529,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: -0.14}
-  m_ConnectedAnchor: {x: -1.0772334, y: -0.020669132}
+  m_ConnectedAnchor: {x: -1.0772333, y: -0.020669252}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -574,7 +574,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: -0.18}
-  m_ConnectedAnchor: {x: 0.0039606094, y: -1.0764751}
+  m_ConnectedAnchor: {x: 0.00396049, y: -1.0764749}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -652,13 +652,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2414053260497458606, guid: d211c65b5acd63443b86b25a10b5b3e4,
         type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.9479071
+      propertyPath: m_LocalScale.x
+      value: 2.094
       objectReference: {fileID: 0}
     - target: {fileID: 2414053260497458606, guid: d211c65b5acd63443b86b25a10b5b3e4,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.094
+      propertyPath: m_LocalScale.y
+      value: 1.9479071
       objectReference: {fileID: 0}
     - target: {fileID: 2414053260497458606, guid: d211c65b5acd63443b86b25a10b5b3e4,
         type: 3}
@@ -680,8 +680,7 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5726822727091474633, guid: d211c65b5acd63443b86b25a10b5b3e4, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d211c65b5acd63443b86b25a10b5b3e4, type: 3}
 --- !u!1 &3249248385215389159 stripped
 GameObject:
@@ -764,13 +763,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2414053260497458606, guid: d211c65b5acd63443b86b25a10b5b3e4,
         type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.9479071
+      propertyPath: m_LocalScale.x
+      value: 2.094
       objectReference: {fileID: 0}
     - target: {fileID: 2414053260497458606, guid: d211c65b5acd63443b86b25a10b5b3e4,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.094
+      propertyPath: m_LocalScale.y
+      value: 1.9479071
       objectReference: {fileID: 0}
     - target: {fileID: 2414053260497458606, guid: d211c65b5acd63443b86b25a10b5b3e4,
         type: 3}
@@ -792,8 +791,7 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5726822727091474633, guid: d211c65b5acd63443b86b25a10b5b3e4, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d211c65b5acd63443b86b25a10b5b3e4, type: 3}
 --- !u!1 &467693437387428902 stripped
 GameObject:
@@ -876,13 +874,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2414053260497458606, guid: d211c65b5acd63443b86b25a10b5b3e4,
         type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.9479071
+      propertyPath: m_LocalScale.x
+      value: 2.094
       objectReference: {fileID: 0}
     - target: {fileID: 2414053260497458606, guid: d211c65b5acd63443b86b25a10b5b3e4,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.094
+      propertyPath: m_LocalScale.y
+      value: 1.9479071
       objectReference: {fileID: 0}
     - target: {fileID: 2414053260497458606, guid: d211c65b5acd63443b86b25a10b5b3e4,
         type: 3}
@@ -904,8 +902,7 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5726822727091474633, guid: d211c65b5acd63443b86b25a10b5b3e4, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d211c65b5acd63443b86b25a10b5b3e4, type: 3}
 --- !u!1 &861703456041277338 stripped
 GameObject:
@@ -988,13 +985,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2414053260497458606, guid: d211c65b5acd63443b86b25a10b5b3e4,
         type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.9479071
+      propertyPath: m_LocalScale.x
+      value: 2.094
       objectReference: {fileID: 0}
     - target: {fileID: 2414053260497458606, guid: d211c65b5acd63443b86b25a10b5b3e4,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.094
+      propertyPath: m_LocalScale.y
+      value: 1.9479071
       objectReference: {fileID: 0}
     - target: {fileID: 2414053260497458606, guid: d211c65b5acd63443b86b25a10b5b3e4,
         type: 3}
@@ -1016,8 +1013,7 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5726822727091474633, guid: d211c65b5acd63443b86b25a10b5b3e4, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d211c65b5acd63443b86b25a10b5b3e4, type: 3}
 --- !u!1 &7416018803054416400 stripped
 GameObject:

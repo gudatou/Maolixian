@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 1290554072191152528}
   - component: {fileID: 1290554072191152531}
   m_Layer: 0
-  m_Name: demond3.1
-  m_TagString: Untagged
+  m_Name: diamond
+  m_TagString: demond
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,7 +91,7 @@ Animator:
   m_GameObject: {fileID: 1290554072191152530}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9a1f7984b49287840ad6ea26fcb7a05e, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

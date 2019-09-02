@@ -7,14 +7,18 @@ public class cat : MonoBehaviour
     public float force = 50.0f;
     private Rigidbody2D rd;
     //public Vector3 dir;
+    private bool isDead = false;
 
     // Start is called before the first frame update
     public int Count = 0;
     public AudioClip pick_gem;
+    private Animator anim = null;
+
     void Start()
     {
 
         rd = this.GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         //di = GameObject.FindGameObjectsWithTag("Che");
         //dir = di.position.y - transform.position.x;
 
@@ -52,5 +56,35 @@ public class cat : MonoBehaviour
             Destroy(collision.gameObject);
             Count++;
         }
+
+
+        if(collision.gameObject.CompareTag("missile"))
+        {
+            isDead = true;
+            anim.SetBool("Dead", isDead);
+            anim.SetTrigger("DeadOnce");
+            //Time.timeScale = 0;
+        }
+        if (collision.gameObject.CompareTag("bat"))
+        {
+
+        }
+        if (collision.gameObject.CompareTag("frame"))
+        {
+            isDead = true;
+            anim.SetBool("Dead", isDead);
+            anim.SetTrigger("DeadOnce");
+            //Time.timeScale = 0;
+        }
+        //if (collision.gameObject.CompareTag("Death level"))
+        //{
+
+        //}
+        //if (collision.gameObject.CompareTag("ball"))
+        //{
+
+        //}
+
+
     }
 }

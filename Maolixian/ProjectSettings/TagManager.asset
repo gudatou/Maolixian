@@ -13,6 +13,8 @@ TagManager:
   - bat
   - hinge
   - diamond
+  - missile
+  - Huolun
   layers:
   - Default
   - TransparentFX

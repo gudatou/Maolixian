@@ -7,15 +7,21 @@ public class cat : MonoBehaviour
     public float force = 50.0f;
     private Rigidbody2D rd;
     //public Vector3 dir;
+    private bool isDead = false;
+    private bool isJump = false;
+    public bool ground;
 
     // Start is called before the first frame update
     public int Count = 0;
     public AudioClip pick_gem;
-    private bool isDead = false;
+    private Animator anim = null;
+    private bool grounded = true;
+
     void Start()
     {
 
         rd = this.GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         //di = GameObject.FindGameObjectsWithTag("Che");
         //dir = di.position.y - transform.position.x;
 
@@ -27,6 +33,8 @@ public class cat : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             rd.AddForce(new Vector3(0, force, 0));
+            isJump = true;
+            anim.SetBool("jump",isJump);
         }
          
 
@@ -53,14 +61,39 @@ public class cat : MonoBehaviour
             Destroy(collision.gameObject);
             Count++;
         }
+
+
+        if(collision.gameObject.CompareTag("missile"))
+        {
+            isDead = true;
+            anim.SetBool("Dead", isDead);
+            anim.SetTrigger("DeadOnce");
+            Debug.Log("1");
+            //Time.timeScale = 0;
+        }
+        if (collision.gameObject.CompareTag("bat"))
+        {
+            isDead = true;
+            anim.SetBool("Dead", isDead);
+            anim.SetTrigger("DeadOnce");
+            //Time.timeScale = 0;
+        }
         if (collision.gameObject.CompareTag("frame"))
         {
             isDead = true;
-            collision.gameObject.GetComponent<AudioSource>().Play();
-            //anim.SetBool("Dead", isDead);
-            //anim.SetTrigger("DiedOnce");
-            Time.timeScale = 0;
-            Debug.Log("cat is dead");
+            anim.SetBool("Dead", isDead);
+            anim.SetTrigger("DeadOnce");
+            //Time.timeScale = 0;
         }
+        //if (collision.gameObject.CompareTag("Death level"))
+        //{
+
+        //}
+        //if (collision.gameObject.CompareTag("ball"))
+        //{
+
+        //}
+
+
     }
 }

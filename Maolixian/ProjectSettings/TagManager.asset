@@ -6,6 +6,7 @@ TagManager:
   tags:
   - circle
   - Black Cat
+  - diamond
   layers:
   - Default
   - TransparentFX

@@ -21,32 +21,38 @@ public class CAR : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
-        if (Cat.transform.position.y - Car.transform.position.y < 1.5)
-        {
-            forword = true;
-        }
-        if(forword == true)
-        {
-            Speed = 5f;
-        }
+        
 
     }
     void Update()
     {
-        transform.Translate(new Vector3(Speed, 0, 0) * Time.deltaTime);
-            //Car.transform.position += Vector3.left * Time.deltaTime;
+        //transform.Translate(new Vector3(Speed, 0, 0) * Time.deltaTime);
+        //Car.transform.position += Vector3.left * Time.deltaTime;
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("Black Cat"))
+            {
+            transform.Translate(new Vector3(Speed, 0, 0) * Time.deltaTime);
+        }
+        //if (Cat.transform.position.y - Car.transform.position.y < -1.5)
+        //{
+        //    forword = true;
+        //}
         
     }
-    //private void FixedUpdate()
-    //{
-    //    if(Cat.transform.position.y-Car.transform.position.y<1.5)
-    //    {
-    //        forword = true;
-    //    }
-       
-    //}
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (forword == true)
+        {
+            Speed = 5f;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
     {
         
     }
+
 }

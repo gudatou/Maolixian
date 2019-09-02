@@ -5,13 +5,13 @@ using UnityEngine;
 public class circle : MonoBehaviour
 {
     // Start is called before the first frame update
-    private bool circle1 = false;
+    //private bool circle1 = false;
     Vector3 mousePositionOnScreen;
 
     void Start()
     {
         gameObject.GetComponent<Renderer>().enabled = false;
-        circle1 = GameObject.FindGameObjectWithTag("circle");
+        /*circle1 = */GameObject.FindGameObjectWithTag("circle");
         Transform trans = GetComponent<Transform>();
         Animation ani = GetComponent<Animation>();
     }

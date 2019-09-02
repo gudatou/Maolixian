@@ -33,22 +33,23 @@ public class CAR : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("enter");
         if(collision.gameObject.CompareTag("Black Cat"))
-            {
+           {
             transform.Translate(new Vector3(Speed, 0, 0) * Time.deltaTime);
         }
         //if (Cat.transform.position.y - Car.transform.position.y < -1.5)
         //{
         //    forword = true;
         //}
-        
+
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (forword == true)
-        {
-            Speed = 5f;
-        }
+        //if (forword == true)
+        //{
+        //    Speed = 5f;
+        //}
     }
     private void OnTriggerExit2D(Collider2D collision)
     {

@@ -202,6 +202,7 @@ GameObject:
   - component: {fileID: 735780919}
   - component: {fileID: 735780918}
   - component: {fileID: 735780917}
+  - component: {fileID: 735780920}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -273,6 +274,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &735780920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735780916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f90f22c0448b574ca6149b18662126f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cat: {fileID: 2077228508}
 --- !u!1 &1159307290
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,7 +465,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234433246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.29, y: 0.38, z: 0}
+  m_LocalPosition: {x: -4.23, y: -0.96, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -508,12 +522,12 @@ PrefabInstance:
     - target: {fileID: 6390554548530411362, guid: 864e4d0401b86df4bb660896566fdbf9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.33
+      value: -4.1
       objectReference: {fileID: 0}
     - target: {fileID: 6390554548530411362, guid: 864e4d0401b86df4bb660896566fdbf9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.18
+      value: 2.7
       objectReference: {fileID: 0}
     - target: {fileID: 6390554548530411362, guid: 864e4d0401b86df4bb660896566fdbf9,
         type: 3}
@@ -565,6 +579,11 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6390554548530411360, guid: 864e4d0401b86df4bb660896566fdbf9,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 864e4d0401b86df4bb660896566fdbf9, type: 3}
 --- !u!1 &1788349931
@@ -578,6 +597,7 @@ GameObject:
   - component: {fileID: 1788349932}
   - component: {fileID: 1788349934}
   - component: {fileID: 1788349933}
+  - component: {fileID: 1788349935}
   m_Layer: 0
   m_Name: Sluice gate
   m_TagString: Untagged
@@ -607,7 +627,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1788349931}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 010d0e476ec72c34193b14717eda9e5e, type: 2}
   m_CullingMode: 0
@@ -666,3 +686,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1788349935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788349931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf853b9368902de428c73eaa7b9e34d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SluiceGate: {fileID: 21300000, guid: db2f92869d6a78040859c78651b78853, type: 3}
+  speed: 10
+  red: {fileID: 1234433246}
+--- !u!4 &2077228508 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6390554548530411362, guid: 864e4d0401b86df4bb660896566fdbf9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1445685199}
+  m_PrefabAsset: {fileID: 0}

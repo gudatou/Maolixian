@@ -79,6 +79,7 @@ public class cat : MonoBehaviour
             anim.SetTrigger("DeadOnce");
             //Time.timeScale = 0;
         }
+
         if (collision.gameObject.CompareTag("frame"))
         {
             isDead = true;

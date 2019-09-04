@@ -31,7 +31,10 @@ public class Carsport : MonoBehaviour
             run = true;
 
         }
-        if (collision.gameObject.CompareTag("reverser"))
+
+
+        if (collision.gameObject.CompareTag("reverse"))
+
         {
             speed = -speed;
         }
@@ -42,7 +45,7 @@ public class Carsport : MonoBehaviour
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (gameObject.CompareTag("reverser"))
+        if (gameObject.CompareTag("reverse"))
         {
             speed = -speed;
         }

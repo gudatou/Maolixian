@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7597488915706940358}
   - component: {fileID: 4279901023405713315}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: tex_eqlopot_png.rcc_000439 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2126314937414474887}
   - component: {fileID: 3010655505974222317}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: tex_eqlopot_png.rcc_000426 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4438970950594018060}
   - component: {fileID: 6026729562845174198}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: guanqia3.0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4820549334817541948}
   - component: {fileID: 2110206499296817273}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: tex_eqlopot_png.rcc_000439
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333,7 +333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5017514759143432382}
   - component: {fileID: 3370245846945682592}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: tex_eqlopot_png.rcc_000436
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -412,7 +412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4729346402985721289}
   - component: {fileID: 7715980137808462764}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: tiegui5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -491,7 +491,7 @@ GameObject:
   m_Component:
   - component: {fileID: 832897629775398074}
   - component: {fileID: 9146542539628823399}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: tex_eqlopot_png.rcc_000426
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -571,6 +571,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: tiegui15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6592121594422750706, guid: fab8d96cf17a5dc41b29a85edc9d98c0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 709425030331695214, guid: fab8d96cf17a5dc41b29a85edc9d98c0,
         type: 3}

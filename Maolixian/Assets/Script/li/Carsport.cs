@@ -31,6 +31,10 @@ public class Carsport : MonoBehaviour
             run = true;
 
         }
+        if (collision.gameObject.CompareTag("reverser"))
+        {
+            speed = -speed;
+        }
         //if(collision.gameObject .CompareTag("tractup"))
         //{
         //    GameObject.Find("chezhengxiang (1)").GetComponent<CircleCollider2D>().enabled = false;

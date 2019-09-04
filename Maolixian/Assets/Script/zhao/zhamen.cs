@@ -25,7 +25,7 @@ public class zhamen : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("cat"))
+        if (collision.gameObject.CompareTag("Black Cat"))
         {
             GetComponent<SpriteRenderer>().sprite = green;
             a = 1;

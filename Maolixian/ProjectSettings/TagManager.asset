@@ -17,6 +17,8 @@ TagManager:
   - Huolun
   - missile
   - cat
+  - car
+  - reverse
   layers:
   - Default
   - TransparentFX

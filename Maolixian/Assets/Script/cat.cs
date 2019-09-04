@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class cat : MonoBehaviour
 {
-    public float force = 50.0f;
+    public float force = 20.0f;
     private Rigidbody2D rd;
     public float JumpHeight = 1.0f;
-    private float MaxJumpHeight = 10.0f;
+    private float MaxJumpHeight = 5.0f;
     //public Vector3 dir;
     private bool isDead = false;
     private bool isJump = false;

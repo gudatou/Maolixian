@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,10 +7,13 @@ public class cat : MonoBehaviour
 {
     public float force = 50.0f;
     private Rigidbody2D rd;
+    public float JumpHeight = 1.0f;
+    private float MaxJumpHeight = 10.0f;
     //public Vector3 dir;
     private bool isDead = false;
     private bool isJump = false;
-    public bool ground;
+    private bool ground;
+    public bool canJump = true;
 
     // Start is called before the first frame update
     public int Count = 0;
@@ -17,6 +21,7 @@ public class cat : MonoBehaviour
     private Animator anim = null;
 
     private bool grounded = true;
+    private Transform groundCheckPoint;
 
 
     void Start()
@@ -24,6 +29,7 @@ public class cat : MonoBehaviour
 
         rd = this.GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        groundCheckPoint = transform.Find("GroundCheckPoint");
         //di = GameObject.FindGameObjectsWithTag("Che");
         //dir = di.position.y - transform.position.x;
 
@@ -32,21 +38,31 @@ public class cat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
-        {
-            rd.AddForce(new Vector3(0, force, 0));
-            isJump = true;
-            anim.SetBool("jump",isJump);
-        }
-         
-
-        //private void OnCollisionEnter2D(Collision2D collision)
-        //{
-
-        //}
 
     }
-     private void OnCollisionEnter2D(Collision2D collision)
+
+    private void FixedUpdate()
+    {
+        if (Input.GetButton("Fire1"))
+        {
+            if(canJump)
+            {
+                rd.AddForce(new Vector3(0, force, 0));
+                isJump = true;
+                anim.SetBool("jump", isJump);
+            }
+            if(transform.position.y>=MaxJumpHeight)
+            {
+                canJump = false;
+            }
+            else
+            {
+                canJump = true;
+            }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
 
     }

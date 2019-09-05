@@ -31,14 +31,17 @@ public class Carsport : MonoBehaviour
             run = true;
 
         }
+
+
         if (collision.gameObject.CompareTag("reverse"))
+
         {
             speed = -speed;
         }
-        //if(collision.gameObject .CompareTag("tractup"))
-        //{
-        //    GameObject.Find("chezhengxiang (1)").GetComponent<CircleCollider2D>().enabled = false;
-        //}
+        if(collision.gameObject .CompareTag("tractup"))
+        {
+           GameObject.Find("chezhengxiang (1)").GetComponent<BoxCollider2D>().enabled = false;
+        }
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {

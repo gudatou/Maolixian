@@ -406,6 +406,7 @@ GameObject:
   - component: {fileID: 9197644258956278493}
   - component: {fileID: 8074452134317178969}
   - component: {fileID: 4558128510720370793}
+  - component: {fileID: 7801392043505220445}
   m_Layer: 12
   m_Name: guanqia3.4 1
   m_TagString: Untagged
@@ -509,6 +510,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 4.0044155, y: 0.16457492}
+  m_EdgeRadius: 0
+--- !u!61 &7801392043505220445
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6580368153708370708}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.0411135, y: 0.08089586}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 0.32}
+    newSize: {x: 1.28, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.60788894, y: 0.15820827}
   m_EdgeRadius: 0
 --- !u!1 &6964042175527977149
 GameObject:

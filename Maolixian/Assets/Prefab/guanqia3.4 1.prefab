@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7483463524133851118}
   - component: {fileID: 7069735728183764991}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: tiegui5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6274893260536722089}
   - component: {fileID: 3581594968935460992}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: tex_eqlopot_png.rcc_000436 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9145270527692162362}
   - component: {fileID: 2563517543912707452}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: tex_eqlopot_png.rcc_000439
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3270379290630321990}
   - component: {fileID: 7116625990080371057}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: tiegui1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1606856224965010132}
   - component: {fileID: 2323621234038858988}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: tex_eqlopot_png.rcc_000436
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 9197644258956278493}
   - component: {fileID: 8074452134317178969}
   - component: {fileID: 4558128510720370793}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: guanqia3.4 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -520,7 +520,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8361630798538058520}
   - component: {fileID: 1748629050269606278}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: tex_eqlopot_png.rcc_000436 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -599,7 +599,7 @@ GameObject:
   m_Component:
   - component: {fileID: 702457096813582527}
   - component: {fileID: 7207800059069866818}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: tex_eqlopot_png.rcc_000443
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -678,7 +678,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7064505670608745811}
   - component: {fileID: 2602982739644401815}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: tex_eqlopot_png.rcc_000452
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -762,7 +762,7 @@ PrefabInstance:
     - target: {fileID: 6592121594422750706, guid: fab8d96cf17a5dc41b29a85edc9d98c0,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 709425030331695214, guid: fab8d96cf17a5dc41b29a85edc9d98c0,
         type: 3}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1438548624968281726}
   - component: {fileID: 9065634238736895172}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: tiegui4 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8056561135229298875}
   - component: {fileID: 5005768407169652446}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: tiegui5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ PrefabInstance:
     - target: {fileID: 6592121594422750706, guid: fab8d96cf17a5dc41b29a85edc9d98c0,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 709425030331695214, guid: fab8d96cf17a5dc41b29a85edc9d98c0,
         type: 3}

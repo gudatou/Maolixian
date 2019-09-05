@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 293969831159465821}
   - component: {fileID: 8237707180687826352}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: hongshi1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2079827460396716994}
   - component: {fileID: 751330965118659500}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: hongshi4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5786253073265465767}
   - component: {fileID: 7871482113345484513}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: hongshi3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   m_Component:
   - component: {fileID: 736818481109236368}
   - component: {fileID: 1338753284645869129}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: hongshi6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2002064481887293211}
   - component: {fileID: 8498742323210218913}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: guanqia1.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,7 +415,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1108921744533294968}
   - component: {fileID: 3796019765410866735}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: hongshi3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -494,7 +494,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7489667571608881630}
   - component: {fileID: 5568151782748960699}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: tiegui5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -573,7 +573,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8655389785623806548}
   - component: {fileID: 8890186953663930972}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: hongshi4 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -657,7 +657,7 @@ PrefabInstance:
     - target: {fileID: 6592121594422750706, guid: fab8d96cf17a5dc41b29a85edc9d98c0,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 709425030331695214, guid: fab8d96cf17a5dc41b29a85edc9d98c0,
         type: 3}
@@ -747,7 +747,7 @@ PrefabInstance:
     - target: {fileID: 8952494790749687219, guid: 6e97e541a90f5ad46a615e4b6c3413f5,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8952494790749687222, guid: 6e97e541a90f5ad46a615e4b6c3413f5,
         type: 3}
@@ -847,7 +847,7 @@ PrefabInstance:
     - target: {fileID: 8952494790749687219, guid: 6e97e541a90f5ad46a615e4b6c3413f5,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8952494790749687222, guid: 6e97e541a90f5ad46a615e4b6c3413f5,
         type: 3}

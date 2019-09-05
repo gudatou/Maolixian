@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4010650649035111786}
   - component: {fileID: 2098143024719217423}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: tiegui5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7050980344310887271}
   - component: {fileID: 9184809369191927763}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: tex_eqlopot_png.rcc_000436
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1764656295350040008}
   - component: {fileID: 1703755145596501188}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: tex_eqlopot_png.rcc_000443
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5445087745649048495}
   - component: {fileID: 2713854595400603925}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: guanqia2.2 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -332,7 +332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 203936221315560119}
   - component: {fileID: 4180230648364932852}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: tex_eqlopot_png.rcc_000439
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -411,7 +411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9141406291133469999}
   - component: {fileID: 8960844944919235659}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: tex_eqlopot_png.rcc_000452
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -495,7 +495,7 @@ PrefabInstance:
     - target: {fileID: 6592121594422750706, guid: fab8d96cf17a5dc41b29a85edc9d98c0,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 709425030331695214, guid: fab8d96cf17a5dc41b29a85edc9d98c0,
         type: 3}

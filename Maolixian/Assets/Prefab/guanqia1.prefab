@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2545284085350633606}
   - component: {fileID: 3240346205286738434}
   - component: {fileID: 7185364975809528370}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: guanqia1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8712813628313905157}
   - component: {fileID: 654801639794479529}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: hongshi5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,7 +203,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2312327219302681787}
   - component: {fileID: 5490125857539250046}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: hongshi1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,7 +282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4395684814247647093}
   - component: {fileID: 680896233052226561}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: hongshi3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -361,7 +361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8184318671047892253}
   - component: {fileID: 4482602781503779626}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: tiegui1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -440,7 +440,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4263968447440823733}
   - component: {fileID: 4533592016314928548}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: tiegui5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -524,7 +524,7 @@ PrefabInstance:
     - target: {fileID: 8952494790749687219, guid: 6e97e541a90f5ad46a615e4b6c3413f5,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8952494790749687222, guid: 6e97e541a90f5ad46a615e4b6c3413f5,
         type: 3}
@@ -624,7 +624,7 @@ PrefabInstance:
     - target: {fileID: 6592121594422750706, guid: fab8d96cf17a5dc41b29a85edc9d98c0,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 709425030331695214, guid: fab8d96cf17a5dc41b29a85edc9d98c0,
         type: 3}
@@ -719,7 +719,7 @@ PrefabInstance:
     - target: {fileID: 8952494790749687219, guid: 6e97e541a90f5ad46a615e4b6c3413f5,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8952494790749687222, guid: 6e97e541a90f5ad46a615e4b6c3413f5,
         type: 3}

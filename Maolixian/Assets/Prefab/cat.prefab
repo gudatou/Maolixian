@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 273245657094510904}
   - component: {fileID: 273245657094510906}
   - component: {fileID: 273245657094510905}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: cat
   m_TagString: Black Cat
   m_Icon: {fileID: 0}
@@ -352,7 +352,7 @@ GameObject:
   m_Component:
   - component: {fileID: 273245658127691983}
   - component: {fileID: 273245658127691982}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: bo
   m_TagString: Untagged
   m_Icon: {fileID: 0}

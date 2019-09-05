@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2979720865005893305}
   - component: {fileID: 2805944335028177981}
   - component: {fileID: 7619872131820577805}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: guanqia2.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7829140955244738895}
   - component: {fileID: 1002157931666014455}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: yun2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5560626423577778289}
   - component: {fileID: 294914769454178878}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: yun11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1645017157245149430}
   - component: {fileID: 4485042379986447552}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: yun6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -359,7 +359,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8907056067399220002}
   - component: {fileID: 3764399402774205717}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: tiegui1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,7 +438,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3540984357308482442}
   - component: {fileID: 3810678457680456603}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: tiegui5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -522,7 +522,7 @@ PrefabInstance:
     - target: {fileID: 6592121594422750706, guid: fab8d96cf17a5dc41b29a85edc9d98c0,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 709425030331695214, guid: fab8d96cf17a5dc41b29a85edc9d98c0,
         type: 3}

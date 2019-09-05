@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4230619538634197811}
   - component: {fileID: 8659508526205744019}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: hongshi6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6514943252785977441}
   - component: {fileID: 2571360269369501928}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: hongshi4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1338958285734374799}
   - component: {fileID: 4044873504413471722}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: tiegui5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7974899157755259722}
   - component: {fileID: 42171301695326704}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: guanqia1.3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333,7 +333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3979366494748489893}
   - component: {fileID: 2071209181940016183}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: hongshi2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -412,7 +412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4182621306538095123}
   - component: {fileID: 6738146954517709424}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: hongshi5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -496,7 +496,7 @@ PrefabInstance:
     - target: {fileID: 6592121594422750706, guid: fab8d96cf17a5dc41b29a85edc9d98c0,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 709425030331695214, guid: fab8d96cf17a5dc41b29a85edc9d98c0,
         type: 3}
@@ -586,7 +586,7 @@ PrefabInstance:
     - target: {fileID: 8952494790749687219, guid: 6e97e541a90f5ad46a615e4b6c3413f5,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8952494790749687222, guid: 6e97e541a90f5ad46a615e4b6c3413f5,
         type: 3}

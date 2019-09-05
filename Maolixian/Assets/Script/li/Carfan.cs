@@ -2,21 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Carsport : MonoBehaviour
+public class Carfan : MonoBehaviour
 {
-    public Rigidbody2D car = null;
-    public float speed = 2.0f;
+    public Rigidbody2D carfan = null;
+    public float chua = -2.0f;
     //public Rigidbody2D rig;
     public bool Rigidbody2D = false;
-    public bool run = false;
+    public bool runfan = false;
     private Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
-        car = GetComponent<Rigidbody2D>();
-        
-        
+        carfan = GetComponent<Rigidbody2D>();
+
+
     }
     //private
     // Update is called once per frame
@@ -29,35 +29,35 @@ public class Carsport : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Black Cat"))
         {
-            run = true;
+            runfan = true;
             //anim.
 
         }
-        
+
 
         if (collision.gameObject.CompareTag("reverse"))
 
         {
-            speed = -speed;
+            chua = -chua;
         }
-        if(collision.gameObject .CompareTag("tractup"))
+        if (collision.gameObject.CompareTag("tractup"))
         {
-           GameObject.Find("chezhengxiang (1)").GetComponent<BoxCollider2D>().enabled = false;
+            GameObject.Find("chezhengxiang (1)").GetComponent<BoxCollider2D>().enabled = false;
         }
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (gameObject.CompareTag("reverse"))
         {
-            speed = -speed;
+            chua = -chua;
         }
     }
 
     public void FixedUpdate()
     {
-        if (run == true)
+        if (runfan == true)
         {
-            car.velocity = new Vector2(speed, car.velocity.y);
+            carfan.velocity = new Vector2(chua, carfan.velocity.y);
             //    rig.velocity = new Vector2(speed,car.velocity.y);
         }
         //else

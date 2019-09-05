@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4627000043845081657}
   - component: {fileID: 4627000043845081606}
   - component: {fileID: 4627000043845081607}
+  - component: {fileID: 336071143}
   m_Layer: 0
   m_Name: landi1
   m_TagString: Untagged
@@ -99,3 +100,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &336071143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4627000043845081604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09480f1e17061164ea6af7a674babf78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starttime: 0
+  addTime: 1.5
+  Water: {fileID: 230093724319180377, guid: 179dd605a2aed4540873b23b7c687a10, type: 3}

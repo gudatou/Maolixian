@@ -40,10 +40,7 @@ public class Carsport : MonoBehaviour
         {
             speed = -speed;
         }
-        if(collision.gameObject .CompareTag("tractup"))
-        {
-           GameObject.Find("chezhengxiang (1)").GetComponent<BoxCollider2D>().enabled = false;
-        }
+      
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
@@ -51,6 +48,15 @@ public class Carsport : MonoBehaviour
         {
             speed = -speed;
         }
+       
+        //  if(collision.gameObject .CompareTag("tractup"))
+        //{
+        //   GameObject.Find("chezhengxiang").GetComponent<BoxCollider2D>().enabled = false;
+        //}
+        //if(collision.gameObject.CompareTag("tractup"))
+        //{
+        //    GameObject.Find("chezhengxiang").GetComponent<CircleCollider2D>().enabled = false;
+        //}
     }
 
     public void FixedUpdate()

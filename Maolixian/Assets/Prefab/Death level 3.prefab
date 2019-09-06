@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3740368364099554476}
   - component: {fileID: 3882109847725142461}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 1037400098638428635}
   - component: {fileID: 4499567179499632658}
   - component: {fileID: 3746033235548479588}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Death level 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -2027,6 +2027,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2062871738, guid: 41bc5db81145bb042aec083e302b214c, type: 3}
+      propertyPath: m_TagString
+      value: car
+      objectReference: {fileID: 0}
+    - target: {fileID: 3357337562102679737, guid: 41bc5db81145bb042aec083e302b214c,
+        type: 3}
+      propertyPath: m_TagString
+      value: car
+      objectReference: {fileID: 0}
+    - target: {fileID: 9140224463103695931, guid: 41bc5db81145bb042aec083e302b214c,
+        type: 3}
+      propertyPath: m_TagString
+      value: car
+      objectReference: {fileID: 0}
     - target: {fileID: 5591762806535001775, guid: 41bc5db81145bb042aec083e302b214c,
         type: 3}
       propertyPath: m_SortingLayerID

@@ -8,7 +8,7 @@ public class Tract1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      
+        GetComponentInChildren<Transform>();
     }
 
     // Update is called once per frame

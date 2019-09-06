@@ -8,7 +8,7 @@ public class Tract1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rig = GetComponent<Rigidbody2D>();
+      
     }
 
     // Update is called once per frame
@@ -18,9 +18,13 @@ public class Tract1 : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("car"))
+        
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("car"))
         {
-            rig.velocity = new Vector2(0,0);
+            Destroy(collision.gameObject.GetComponent<Collider2D>());
         }
     }
 }

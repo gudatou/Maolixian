@@ -133,6 +133,36 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 6066373109944954109, guid: 2c2b5ebcf72efe643b47fb8ec22dad97,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1665396971
+      objectReference: {fileID: 0}
+    - target: {fileID: 6066373109944954109, guid: 2c2b5ebcf72efe643b47fb8ec22dad97,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340407739643636269, guid: 2c2b5ebcf72efe643b47fb8ec22dad97,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1665396971
+      objectReference: {fileID: 0}
+    - target: {fileID: 1340407739643636269, guid: 2c2b5ebcf72efe643b47fb8ec22dad97,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1316739035417203875, guid: 2c2b5ebcf72efe643b47fb8ec22dad97,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1665396971
+      objectReference: {fileID: 0}
+    - target: {fileID: 1316739035417203875, guid: 2c2b5ebcf72efe643b47fb8ec22dad97,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c2b5ebcf72efe643b47fb8ec22dad97, type: 3}
 --- !u!1 &6623486587005093423 stripped

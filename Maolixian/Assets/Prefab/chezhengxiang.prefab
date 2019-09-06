@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 1618049973}
   m_Layer: 10
   m_Name: chezhengxiang
-  m_TagString: Untagged
+  m_TagString: car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

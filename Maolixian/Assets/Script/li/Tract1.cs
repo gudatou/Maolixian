@@ -24,7 +24,12 @@ public class Tract1 : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("car"))
         {
+            collision.gameObject.GetComponent<Carsport>().run = false;
+            Rigidbody2D rig = collision.gameObject.GetComponent<Rigidbody2D>();
+            rig.velocity = new Vector2(0, rig.velocity.y);
             Destroy(collision.gameObject.GetComponent<Collider2D>());
+            collision.gameObject.transform.eulerAngles = new Vector3(0, 0, -60.0f); 
+
         }
     }
 }

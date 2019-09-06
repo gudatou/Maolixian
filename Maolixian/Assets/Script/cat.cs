@@ -49,7 +49,7 @@ public class cat : MonoBehaviour
     {
          if (transform.position.y >= MaxJumpHeight)
          {
-             canJump = false;
+            canJump = false;
             isJump = true;
          }
          if (JetActive && canJump)
@@ -110,6 +110,7 @@ public class cat : MonoBehaviour
             anim.SetTrigger("DeadOnce");
             canJump = false;
             Destroy(co);
+            //Destroy(rd);
             force = 0.0f;
             //Time.timeScale = 0;
         }

@@ -11,6 +11,7 @@ public class killbat : MonoBehaviour
     }
 
     // Update is called once per frame
+    public GameObject GG;
     void Update()
     {
         
@@ -26,6 +27,10 @@ public class killbat : MonoBehaviour
      }*/
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        gameObject.transform.parent.Find("red bat").GetComponent<Rigidbody2D>().simulated = true;
+        if (collision.gameObject.CompareTag("Black Cat"))
+        {
+            gameObject.transform.parent.Find("red bat").GetComponent<Rigidbody2D>().simulated = true;
+           gameObject.transform.parent.gameObject.transform.eulerAngles = new Vector3(0, 0, 60.0f);
+        }
     }
 }

@@ -20,6 +20,10 @@ public class Deathlevel : MonoBehaviour
         
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Time.timeScale = 0;
+    }
     private void FixedUpdate()
     {
         death.transform.parent = cat.transform;

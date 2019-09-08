@@ -27,7 +27,7 @@ public class Carsport : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-<<<<<<< HEAD
+
         if (collision.gameObject.CompareTag("Black Cat"))
         {
             run = true;
@@ -35,9 +35,7 @@ public class Carsport : MonoBehaviour
 
         }
 
-=======
-        
->>>>>>> a3300b927d95b1fd5bf1bfa65f8660abd01d26b6
+
 
 
         if (collision.gameObject.CompareTag("reverse"))

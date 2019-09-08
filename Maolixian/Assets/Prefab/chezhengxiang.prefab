@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2062871739}
   - component: {fileID: 2062871740}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: che
   m_TagString: car
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   - component: {fileID: 4234642519110473655}
   - component: {fileID: 5591762806535001775}
   - component: {fileID: 1236218865}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: wheel
   m_TagString: car
   m_Icon: {fileID: 0}
@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 6588137829257638952}
   - component: {fileID: 1618049971}
   - component: {fileID: 1618049973}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: chezhengxiang
   m_TagString: car
   m_Icon: {fileID: 0}
@@ -332,7 +332,7 @@ GameObject:
   - component: {fileID: 6975981316668604244}
   - component: {fileID: 2982633975417823391}
   - component: {fileID: 622681818}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: wheel (1)
   m_TagString: car
   m_Icon: {fileID: 0}

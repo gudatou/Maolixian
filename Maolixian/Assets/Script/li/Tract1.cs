@@ -23,7 +23,7 @@ public class Tract1 : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.CompareTag("car"))
-        {
+        {          
             Destroy(collision.gameObject.GetComponent<Collider2D>());
         }
     }

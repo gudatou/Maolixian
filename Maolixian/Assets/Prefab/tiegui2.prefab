@@ -956,6 +956,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: tractdown
       objectReference: {fileID: 0}
+    - target: {fileID: 8657797358031222007, guid: 845d49aec715b4e47841e0205d46b89b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 8657797358031222006, guid: 845d49aec715b4e47841e0205d46b89b,
         type: 3}
       propertyPath: m_LocalPosition.x

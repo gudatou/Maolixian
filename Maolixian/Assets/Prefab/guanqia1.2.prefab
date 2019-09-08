@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4525537042892393242}
   - component: {fileID: 4343336505915361811}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: hongshi6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 1615960142714787317}
   - component: {fileID: 8670644400027613007}
   - component: {fileID: 7551729366118988591}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: guanqia1.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3210164810169900522}
   - component: {fileID: 1727984794023723727}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: hongshi1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7662149915654968112}
   - component: {fileID: 4675797108464315733}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: tiegui5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -364,7 +364,7 @@ PrefabInstance:
     - target: {fileID: 6592121594422750706, guid: fab8d96cf17a5dc41b29a85edc9d98c0,
         type: 3}
       propertyPath: m_Layer
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 709425030331695214, guid: fab8d96cf17a5dc41b29a85edc9d98c0,
         type: 3}
@@ -464,7 +464,7 @@ PrefabInstance:
     - target: {fileID: 8952494790749687219, guid: 6e97e541a90f5ad46a615e4b6c3413f5,
         type: 3}
       propertyPath: m_Layer
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8952494790749687222, guid: 6e97e541a90f5ad46a615e4b6c3413f5,
         type: 3}
@@ -564,17 +564,17 @@ PrefabInstance:
     - target: {fileID: 8657797358031222007, guid: 845d49aec715b4e47841e0205d46b89b,
         type: 3}
       propertyPath: m_Layer
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8657797358031222006, guid: 845d49aec715b4e47841e0205d46b89b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.06
+      value: 2.27
       objectReference: {fileID: 0}
     - target: {fileID: 8657797358031222006, guid: 845d49aec715b4e47841e0205d46b89b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.09
+      value: 0.298
       objectReference: {fileID: 0}
     - target: {fileID: 8657797358031222006, guid: 845d49aec715b4e47841e0205d46b89b,
         type: 3}

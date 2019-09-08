@@ -30,20 +30,33 @@ public class Carsport : MonoBehaviour
         if (collision.gameObject.CompareTag("Black Cat"))
         {
             run = true;
-            //anim.
+           
 
         }
-        
+
 
         if (collision.gameObject.CompareTag("reverse"))
 
         {
             speed = -speed;
         }
-      
+
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.CompareTag("Black Cat"))
+        {
+            run = true;
+            //anim.
+
+        }
+
+
+        if (collision.gameObject.CompareTag("reverse"))
+
+        {
+            speed = -speed;
+        }
         if (gameObject.CompareTag("reverse"))
         {
             speed = -speed;

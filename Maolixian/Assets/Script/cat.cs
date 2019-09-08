@@ -14,17 +14,18 @@ public class cat : MonoBehaviour
     //public Vector3 dir;
     private bool isDead = false;
     private bool isJump = false;
-    private bool ground;
+    private bool grounded = false;
     public bool canJump = false;
-    private bool JetActive = false; 
+    private bool JetActive = false;
 
+
+    public LayerMask TheGround;
     // Start is called before the first frame update
     public int Count = 0;
     public AudioClip pick_gem;
     private Animator anim = null;
 
-    private bool grounded = true;
-    private Transform groundCheckPoint;
+    private Transform groundCheckPoint = null;
     private bool isgrounded = false;
 
     void Start()
@@ -33,7 +34,7 @@ public class cat : MonoBehaviour
         rd = this.GetComponent<Rigidbody2D>();
         co = this.GetComponent<PolygonCollider2D>();
         anim = GetComponent<Animator>();
-        groundCheckPoint = transform.Find("GroundCheckPoint");
+        groundCheckPoint = transform.Find("groundCheckPoint");
         //di = GameObject.FindGameObjectsWithTag("Che");
         //dir = di.position.y - transform.position.x;
 
@@ -58,19 +59,36 @@ public class cat : MonoBehaviour
              isJump = true;
              anim.SetBool("jump",isJump);
          }
-         if(isJump == true)
-        {
-            anim.SetBool("ground",isgrounded);
-        }
+        GroundStateCheck();
+        // if(isJump == true)
+        //{
+        //    anim.SetBool("ground",isgrounded);
+        //}
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("car")) 
+        if (collision.gameObject.CompareTag("car"))
         {
+            canJump = true;
+            anim.SetBool("ground", isgrounded);
+        }
+        if (collision.gameObject.CompareTag("hinge"))
+        {
+            canJump = true;
             anim.SetBool("ground", isgrounded);
         }
     }
+
+
+
+    private void GroundStateCheck()
+    {
+        grounded = Physics2D.OverlapCircle(groundCheckPoint.position, 0.1f, TheGround);
+        //jetPack.emission.enabled = false;
+        anim.SetBool("Grounded", grounded);
+    }
+
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -90,10 +108,12 @@ public class cat : MonoBehaviour
 
         if(collision.gameObject.CompareTag("missile"))
         {
-            Debug.Log("123");
             isDead = true;
             anim.SetBool("Dead", isDead);
             anim.SetTrigger("DeadOnce");
+            canJump = false;
+            Destroy(co);
+            force = 0.0f;
             //Time.timeScale = 0;
         }
         if (collision.gameObject.CompareTag("bat"))
@@ -101,6 +121,9 @@ public class cat : MonoBehaviour
             isDead = true;
             anim.SetBool("Dead", isDead);
             anim.SetTrigger("DeadOnce");
+            canJump = false;
+            Destroy(co);
+            force = 0.0f;
             //Time.timeScale = 0;
         }
         if (collision.gameObject.CompareTag("frame"))
@@ -110,8 +133,8 @@ public class cat : MonoBehaviour
             anim.SetTrigger("DeadOnce");
             canJump = false;
             Destroy(co);
-            //Destroy(rd);
             force = 0.0f;
+            //Destroy(rd);
             //Time.timeScale = 0;
         }
         if (collision.gameObject.CompareTag("ball"))
@@ -119,6 +142,9 @@ public class cat : MonoBehaviour
             isDead = true;
             anim.SetBool("Dead", isDead);
             anim.SetTrigger("DeadOnce");
+            canJump = false;
+            Destroy(co);
+            force = 0.0f;
             //Time.timeScale = 0;
         }
         //if (collision.gameObject.CompareTag("Death level"))

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8885133114299004920}
   - component: {fileID: 4024163902467785497}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: GameObject
   m_TagString: car
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   - component: {fileID: 7909112686921404787}
   - component: {fileID: 7909112686921404788}
   - component: {fileID: 1388332869}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: wheel
   m_TagString: car
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   - component: {fileID: 7909112688004639960}
   - component: {fileID: 7909112688004639961}
   - component: {fileID: 330382058}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: wheel (1)
   m_TagString: car
   m_Icon: {fileID: 0}
@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 269732246}
   - component: {fileID: 269732247}
   - component: {fileID: 2257352917240809741}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: board
   m_TagString: car
   m_Icon: {fileID: 0}
@@ -322,8 +322,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -961002539
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5879fd6589d45634a9d2e31ee31937e1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

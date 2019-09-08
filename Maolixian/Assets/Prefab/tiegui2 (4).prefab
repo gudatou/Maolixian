@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1306889521145121888}
   - component: {fileID: 6738207591938450007}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: tiegui1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6384736300029588680}
   - component: {fileID: 6727540613775793369}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: tiegui5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 4676180087935500795}
   - component: {fileID: 5714943496755329919}
   - component: {fileID: 1548227407}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: tiegui2 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,6 +280,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: tractdown
       objectReference: {fileID: 0}
+    - target: {fileID: 8657797358031222007, guid: 845d49aec715b4e47841e0205d46b89b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 8657797358031222006, guid: 845d49aec715b4e47841e0205d46b89b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -358,7 +363,7 @@ PrefabInstance:
     - target: {fileID: 6592121594422750706, guid: fab8d96cf17a5dc41b29a85edc9d98c0,
         type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 709425030331695214, guid: fab8d96cf17a5dc41b29a85edc9d98c0,
         type: 3}

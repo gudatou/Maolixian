@@ -15,8 +15,8 @@ public class Carsport : MonoBehaviour
     void Start()
     {
         car = GetComponent<Rigidbody2D>();
-        
-        
+
+
     }
     //private
     // Update is called once per frame
@@ -27,20 +27,15 @@ public class Carsport : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Black Cat"))
-        {
-            run = true;
-            //anim.
-
-        }
         
+
 
         if (collision.gameObject.CompareTag("reverse"))
 
         {
             speed = -speed;
         }
-      
+
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
@@ -48,7 +43,14 @@ public class Carsport : MonoBehaviour
         {
             speed = -speed;
         }
-       
+
+        if (collision.gameObject.CompareTag("Black Cat"))
+        {
+
+            run = true;
+            //anim.
+
+        }
         //  if(collision.gameObject .CompareTag("tractup"))
         //{
         //   GameObject.Find("chezhengxiang").GetComponent<BoxCollider2D>().enabled = false;

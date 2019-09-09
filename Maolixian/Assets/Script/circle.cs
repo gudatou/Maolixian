@@ -7,7 +7,6 @@ public class circle : MonoBehaviour
     // Start is called before the first frame update
     //private bool circle1 = false;
     Vector3 mousePositionOnScreen;
-
     void Start()
     {
         gameObject.GetComponent<Renderer>().enabled = false;
@@ -33,5 +32,4 @@ public class circle : MonoBehaviour
 
 
     }
-
 }

@@ -27,12 +27,7 @@ public class Carfan : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Black Cat"))
-        {
-            runfan = true;
-            //anim.
-
-        }
+      
 
 
         if (collision.gameObject.CompareTag("reverse"))
@@ -47,6 +42,12 @@ public class Carfan : MonoBehaviour
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.CompareTag("Black Cat"))
+        {
+            runfan = true;
+            //anim.
+
+        }
         if (gameObject.CompareTag("reverse"))
         {
             chua = -chua;

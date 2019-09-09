@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8885133114299004920}
   - component: {fileID: 4024163902467785497}
-  m_Layer: 14
+  m_Layer: 15
   m_Name: GameObject
   m_TagString: car
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5377822286722844490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7909112688032079780}
@@ -262,8 +262,8 @@ GameObject:
   - component: {fileID: 7909112688032079778}
   - component: {fileID: 269732245}
   - component: {fileID: 269732246}
-  - component: {fileID: 269732247}
   - component: {fileID: 2257352917240809741}
+  - component: {fileID: 925495356893024254}
   m_Layer: 14
   m_Name: board
   m_TagString: car
@@ -390,22 +390,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Delegates: []
   delegates: []
---- !u!114 &269732247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7909112688032079777}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b7fe4da6c0bdb41bb8be145f600ed9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 1
-  forword: 0
-  Car: {fileID: 0}
-  Cat: {fileID: 0}
 --- !u!61 &2257352917240809741
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -432,3 +416,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.56, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &925495356893024254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7909112688032079777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 844f322370329a14aa15950813b15185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carfan: {fileID: 0}
+  chua: -2
+  Rigidbody2D: 0
+  runfan: 0

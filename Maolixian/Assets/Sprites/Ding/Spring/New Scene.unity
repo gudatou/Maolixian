@@ -192,6 +192,7 @@ GameObject:
   - component: {fileID: 1003426638}
   - component: {fileID: 1003426637}
   - component: {fileID: 1003426636}
+  - component: {fileID: 1003426639}
   m_Layer: 0
   m_Name: spring4
   m_TagString: Untagged
@@ -211,12 +212,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathName: New Path 1
+  pathName: MyPath
   pathColor: {r: 0, g: 1, b: 1, a: 1}
   nodes:
-  - {x: -0.54965526, y: 0.5292977, z: 0}
-  - {x: -0.14250305, y: 0.5292976, z: 0}
-  - {x: 0.31893587, y: 0.5292976, z: 0}
+  - {x: 4.616673, y: 0.5292977, z: 0}
+  - {x: 2.4300303, y: 0.5292976, z: 0}
+  - {x: -0.12753677, y: 0.5292976, z: 0}
   nodeCount: 3
   initialized: 1
   initialName: New Path 1
@@ -284,6 +285,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1003426639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003426635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d13ddad0988c343b357f5b0902ea41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paths: []
 --- !u!1001 &1598164809
 PrefabInstance:
   m_ObjectHideFlags: 0

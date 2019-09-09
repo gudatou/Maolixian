@@ -5,7 +5,7 @@ using UnityEngine;
 public class Carsport : MonoBehaviour
 {
     public Rigidbody2D car = null;
-    public float speed = 2.0f;
+    public float speed = 3.0f;
     //public Rigidbody2D rig;
     public bool Rigidbody2D = false;
     public bool run = false;

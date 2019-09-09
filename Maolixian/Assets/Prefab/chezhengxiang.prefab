@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2062871739}
   - component: {fileID: 2062871740}
-  m_Layer: 15
+  m_Layer: 14
   m_Name: che
   m_TagString: car
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062871738}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.04, y: -0.012, z: 0.03544476}
+  m_LocalPosition: {x: -0.04, y: -0.04, z: 0.03544476}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5509169451325486445}
@@ -40,7 +40,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 2062871738}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 0f0d5267e1caa494197308e5cf01896d, type: 2}
+  m_Material: {fileID: 6200000, guid: c00d1596d568e8f469c58687dc6205ae, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

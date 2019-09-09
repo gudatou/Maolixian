@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class Carfan : MonoBehaviour
 {
-    public Rigidbody2D carfan = null;
-    public float chua = -2.0f;
+    public Rigidbody2D Fcar = null;
+    public float Fsport = -3.0f;
     //public Rigidbody2D rig;
     public bool Rigidbody2D = false;
-    public bool runfan = false;
+    public bool fanrun = false;
     private Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
-        carfan = GetComponent<Rigidbody2D>();
+        Fcar = GetComponent<Rigidbody2D>();
 
 
     }
@@ -27,45 +27,73 @@ public class Carfan : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
+
+        if (collision.gameObject.CompareTag("Black Cat"))
+        {
+            fanrun = true;
+
+
+        }
       
 
+
+
+
+
+        //if (collision.gameObject.CompareTag("reverse"))
+
+        //{
+        //    Fsport = -Fsport;
+        //}
+
+    }
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        //    if (collision.gameObject.CompareTag("Black Cat"))
+        //    {
+        //        fanrun = true;
+        //        //anim.
+
+        //    }
+        if (collision.gameObject.CompareTag("Black Cat"))
+        {
+            fanrun = true;
+
+
+        }
 
         if (collision.gameObject.CompareTag("reverse"))
 
         {
-            chua = -chua;
+            Fsport = -Fsport;
         }
-        if (collision.gameObject.CompareTag("tractup"))
-        {
-            GameObject.Find("chezhengxiang (1)").GetComponent<BoxCollider2D>().enabled = false;
-        }
-    }
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
+
         if (collision.gameObject.CompareTag("Black Cat"))
         {
-            runfan = true;
+            fanrun = true;
             //anim.
 
         }
         if (gameObject.CompareTag("reverse"))
-        {
-            chua = -chua;
-        }
-    }
 
-    public void FixedUpdate()
+        {
+
+            fanrun = true;
+            //anim.
+
+
+
+        }
+       
+
+     void FixedUpdate()
     {
-        if (runfan == true)
+        if (fanrun == true)
         {
-            carfan.velocity = new Vector2(chua, carfan.velocity.y);
-            //    rig.velocity = new Vector2(speed,car.velocity.y);
+            Fcar.velocity = new Vector2(Fsport, Fcar.velocity.y);
+            
         }
-        //else
-        //{
-        //    car.velocity = new Vector2(-speed, car.velocity.y);
-        //}
+       
 
     }
 
-}

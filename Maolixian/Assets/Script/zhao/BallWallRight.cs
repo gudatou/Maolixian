@@ -25,7 +25,7 @@ public class BallWallRight : MonoBehaviour
         if (Input.GetButton("Fire1"))
         {
             collision.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
-            collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(50,100));
+            collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(250,400));
             collision.GetComponent<SpriteRenderer>().flipX = false;
         }
     }

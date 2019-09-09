@@ -84,16 +84,17 @@ public class Carfan : MonoBehaviour
 
 
         }
-       
+    }
 
-     void FixedUpdate()
-    {
-        if (fanrun == true)
+        void FixedUpdate()
         {
-            Fcar.velocity = new Vector2(Fsport, Fcar.velocity.y);
-            
-        }
-       
+            if (fanrun == true)
+            {
+                Fcar.velocity = new Vector2(Fsport, Fcar.velocity.y);
 
+            }
+
+
+        }
     }
 

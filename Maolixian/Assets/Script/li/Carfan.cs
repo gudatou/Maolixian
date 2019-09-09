@@ -34,6 +34,8 @@ public class Carfan : MonoBehaviour
 
 
         }
+      
+
 
 
 
@@ -65,25 +67,26 @@ public class Carfan : MonoBehaviour
         {
             Fsport = -Fsport;
         }
-        
+
         if (collision.gameObject.CompareTag("Black Cat"))
+        {
+            fanrun = true;
+            //anim.
+
+        }
+        if (gameObject.CompareTag("reverse"))
+
         {
 
             fanrun = true;
             //anim.
 
-        }
-        //  if(collision.gameObject .CompareTag("tractup"))
-        //{
-        //   GameObject.Find("chezhengxiang").GetComponent<BoxCollider2D>().enabled = false;
-        //}
-        //if(collision.gameObject.CompareTag("tractup"))
-        //{
-        //    GameObject.Find("chezhengxiang").GetComponent<CircleCollider2D>().enabled = false;
-        //}
-    }
 
-    public void FixedUpdate()
+
+        }
+       
+
+     void FixedUpdate()
     {
         if (fanrun == true)
         {
@@ -94,4 +97,3 @@ public class Carfan : MonoBehaviour
 
     }
 
-}

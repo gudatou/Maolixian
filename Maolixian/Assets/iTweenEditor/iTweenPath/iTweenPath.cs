@@ -21,6 +21,7 @@
 
 using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 
 [AddComponentMenu("Pixelplacement/iTweenPath")]
 public class iTweenPath : MonoBehaviour
@@ -33,6 +34,7 @@ public class iTweenPath : MonoBehaviour
 	public bool initialized = false;
 	public string initialName = "";
 	public bool pathVisible = true;
+
 		
 	void OnEnable(){
 		if(!paths.ContainsKey(pathName)){
@@ -90,5 +92,8 @@ public class iTweenPath : MonoBehaviour
 			Debug.Log("No path with that name (" + requestedName + ") exists! Are you sure you wrote it correctly?");
 			return null;
 		}
+
+
 	}
+
 }

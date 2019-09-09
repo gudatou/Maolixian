@@ -10,7 +10,7 @@ public class cat : MonoBehaviour
     private PolygonCollider2D co;
     private BoxCollider2D box;
     public float JumpHeight = 1.0f;
-    private float MaxJumpHeight = 3.0f;
+    private float MaxJumpHeight;
     //public Vector3 dir;
     private bool isDead = false;
     private bool isJump = false;
@@ -26,7 +26,6 @@ public class cat : MonoBehaviour
     private Animator anim = null;
 
     private Transform groundCheckPoint = null;
-    private bool isgrounded = false;
 
     void Start()
     {
@@ -34,7 +33,7 @@ public class cat : MonoBehaviour
         rd = this.GetComponent<Rigidbody2D>();
         co = this.GetComponent<PolygonCollider2D>();
         anim = GetComponent<Animator>();
-        groundCheckPoint = transform.Find("groundCheckPoint");
+        groundCheckPoint = transform.Find("GroundCheckPoint");
         //di = GameObject.FindGameObjectsWithTag("Che");
         //dir = di.position.y - transform.position.x;
 
@@ -48,11 +47,16 @@ public class cat : MonoBehaviour
 
     private void FixedUpdate()
     {
-         if (transform.position.y >= MaxJumpHeight)
-         {
-            canJump = false;
-            isJump = true;
-         }
+         //if (transform.position.y >= MaxJumpHeight)
+         //{
+         //   canJump = false;
+         //   isJump = true;
+         //}
+        if(grounded == true)
+        {
+            canJump = true ;
+        }
+
          if (JetActive && canJump)
          {
              rd.AddForce(new Vector2(0, force));
@@ -71,12 +75,12 @@ public class cat : MonoBehaviour
         if (collision.gameObject.CompareTag("car"))
         {
             canJump = true;
-            anim.SetBool("ground", isgrounded);
+            anim.SetBool("ground", grounded);
         }
         if (collision.gameObject.CompareTag("hinge"))
         {
             canJump = true;
-            anim.SetBool("ground", isgrounded);
+            anim.SetBool("ground", grounded);
         }
     }
 

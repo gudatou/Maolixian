@@ -26,5 +26,6 @@ public class killbat1 : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         gameObject.transform.parent.Find("green bat").GetComponent<Rigidbody2D>().simulated = true;
+        gameObject.transform.parent.gameObject.transform.eulerAngles = new Vector3(0, 0, 60.0f);
     }
 }

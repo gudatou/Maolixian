@@ -194,6 +194,11 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 885e250a58ddef349802f4835afb69e0, type: 2}
+    - target: {fileID: 3169359906830639716, guid: faca9c213f3bc564fa54271cc5ecc350,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3169359907654544671, guid: faca9c213f3bc564fa54271cc5ecc350,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -218,11 +223,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: hinge
-      objectReference: {fileID: 0}
-    - target: {fileID: 3169359906830639716, guid: faca9c213f3bc564fa54271cc5ecc350,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3169359906830639717, guid: faca9c213f3bc564fa54271cc5ecc350,
         type: 3}
@@ -1095,6 +1095,16 @@ PrefabInstance:
         type: 3}
       propertyPath: canJump
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 273245658127691983, guid: 864e4d0401b86df4bb660896566fdbf9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 273245658127691983, guid: 864e4d0401b86df4bb660896566fdbf9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.03
       objectReference: {fileID: 0}
     - target: {fileID: 273245658127691982, guid: 864e4d0401b86df4bb660896566fdbf9,
         type: 3}

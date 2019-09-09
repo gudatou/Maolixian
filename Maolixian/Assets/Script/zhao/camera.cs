@@ -5,7 +5,7 @@ using UnityEngine;
 public class camera : MonoBehaviour
 {
 
-    public Transform cat;
+    /*public Transform cat;
     private float distanceX;
     private float distanceY;
     // Use this for initialization
@@ -22,8 +22,7 @@ public class camera : MonoBehaviour
             cat.position.x + distanceX,
             transform.position.y,
             transform.position.z);
-    }
-}
+    }*/
 
     public GameObject Keyingwave;
     private Transform m_Transform;
@@ -88,4 +87,5 @@ public class camera : MonoBehaviour
             GameObject KW = Instantiate(Keyingwave, newW, Quaternion.identity);
         }
     }
+}
 

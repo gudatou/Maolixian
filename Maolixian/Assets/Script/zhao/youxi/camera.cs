@@ -46,7 +46,7 @@ public class camera : MonoBehaviour
 
     void Update()
     {
-        createKW();
+
     }
 
     void LateUpdate()
@@ -68,7 +68,7 @@ public class camera : MonoBehaviour
 
             if (cat_Transform.position.y > -10 && cat_Transform.position.y < 50)
             {
-                Vector3 nextPos = new Vector3(cat_Transform.position.x, cat_Transform.position.y, cat_Transform.position.z - 10);
+                Vector3 nextPos1 = new Vector3(cat_Transform.position.x, cat_Transform.position.y, cat_Transform.position.z - 10);
 
                 m_Transform.position = Vector3.Lerp(m_Transform.position, nextPos, Time.deltaTime * 2);
             }

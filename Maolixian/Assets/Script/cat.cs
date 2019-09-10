@@ -63,6 +63,10 @@ public class cat : MonoBehaviour
              isJump = true;
              anim.SetBool("jump",isJump);
          }
+         else
+        {
+            anim.SetBool("Grounded", grounded);
+        }
         GroundStateCheck();
         // if(isJump == true)
         //{
@@ -75,12 +79,12 @@ public class cat : MonoBehaviour
         if (collision.gameObject.CompareTag("car"))
         {
             canJump = true;
-            anim.SetBool("ground", grounded);
+            anim.SetBool("Grounded", grounded);
         }
         if (collision.gameObject.CompareTag("hinge"))
         {
             canJump = true;
-            anim.SetBool("ground", grounded);
+            anim.SetBool("Grounded", grounded);
         }
     }
 
@@ -97,17 +101,7 @@ public class cat : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("diamond"))
-        {
-            Destroy(collision.gameObject);
-        }
-
-        if (collision.gameObject.CompareTag("diamond"))
-        {
-            AudioSource.PlayClipAtPoint(pick_gem, collision.transform.position);
-            Destroy(collision.gameObject);
-            Count++;
-        }
+       
 
 
         if(collision.gameObject.CompareTag("missile"))

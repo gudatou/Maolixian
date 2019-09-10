@@ -9,7 +9,7 @@ public class Carsport : MonoBehaviour
     ////public Rigidbody2D rig;
     //public bool Rigidbody2D = false;
     public bool run = false;
-    private Animator anim;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +41,7 @@ public class Carsport : MonoBehaviour
         if (collision.gameObject.CompareTag("reverse"))
 
         {
+            Debug.Log("1");
             speed = -speed;
         }
 
@@ -60,10 +61,7 @@ public class Carsport : MonoBehaviour
         {
             speed = -speed;
         }
-        if (gameObject.CompareTag("reverse"))
-        {
-            speed = -speed;
-        }
+       
 
         if (collision.gameObject.CompareTag("Black Cat"))
         {

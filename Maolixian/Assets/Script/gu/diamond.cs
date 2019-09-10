@@ -6,7 +6,8 @@ public class diamond : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject DD;
-
+    public int Count = 0;
+    public AudioClip pick_gem;
     void Start()
     {
         
@@ -23,7 +24,12 @@ public class diamond : MonoBehaviour
         Vector2 diamond = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
         Instantiate(DD, diamond, Quaternion.identity);
         DD.SetActive(true);
-
+        if (collision.gameObject.CompareTag("Black Cat"))
+        {
+            AudioSource.PlayClipAtPoint(pick_gem, collision.transform.position);
+            Destroy(gameObject);
+            Count++;
+        }
     }
 
 }

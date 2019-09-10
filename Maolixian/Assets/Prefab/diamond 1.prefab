@@ -129,4 +129,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e20479ee3b3b0db419b839bf0dfcb340, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DD: {fileID: 0}
+  DD: {fileID: 2534913899372903318, guid: 96d4bd3a45a74f841b52ea9018542182, type: 3}
+  Count: 0
+  pick_gem: {fileID: 8300000, guid: 9971c3c8369bec6499425c162886cdc0, type: 3}

@@ -1832,11 +1832,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 10.52
       objectReference: {fileID: 0}
-    - target: {fileID: 8217330254980574946, guid: 10eb1b6181a78b0419c9c27111ee2777,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 1669040857935088739, guid: 10eb1b6181a78b0419c9c27111ee2777,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -1851,6 +1846,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8217330254980574946, guid: 10eb1b6181a78b0419c9c27111ee2777,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 340429057608697063, guid: 10eb1b6181a78b0419c9c27111ee2777,
         type: 3}
@@ -7848,6 +7848,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3854933758556146883, guid: 864e4d0401b86df4bb660896566fdbf9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 39.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3854933758556146883, guid: 864e4d0401b86df4bb660896566fdbf9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21.7
+      objectReference: {fileID: 0}
     - target: {fileID: 273245657094510908, guid: 864e4d0401b86df4bb660896566fdbf9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14364,8 +14374,9 @@ GameObject:
   - component: {fileID: 2089120339}
   - component: {fileID: 2089120338}
   - component: {fileID: 2089120341}
-  - component: {fileID: 2089120342}
   - component: {fileID: 2089120343}
+  - component: {fileID: 2089120342}
+  - component: {fileID: 2089120344}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -14472,6 +14483,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 662a9c6b81ed4a741a6a634e01995207, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Keyingwave: {fileID: 7881994539927249954, guid: 30df8a52e95ff9d418b90c73c1b76a97,
+    type: 3}
+  StartTime: 0
+  EndTime: 0
+--- !u!114 &2089120344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089120337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724232a24e5d1c74487681f10b8e1eb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Keyingwave: {fileID: 7881994539927249954, guid: 30df8a52e95ff9d418b90c73c1b76a97,

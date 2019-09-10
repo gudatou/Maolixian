@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GameUI : MonoBehaviour
 {
     public Text Score;
-    private diamond d = null;
+    private cat d = null;
     public Sprite PlaySprite;
     public Sprite PauseSprite;
     private bool paused = false;
@@ -15,7 +15,7 @@ public class GameUI : MonoBehaviour
     void Start()
     {
         //Score.text = "100";
-        d = GameObject.FindGameObjectWithTag("Black Cat").GetComponent<diamond>();
+        d = GameObject.FindGameObjectWithTag("Black Cat").GetComponent<cat>();
     }
 
     // Update is called once per frame

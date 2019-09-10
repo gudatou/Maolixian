@@ -28,7 +28,7 @@ public class diamond : MonoBehaviour
         {
             AudioSource.PlayClipAtPoint(pick_gem, collision.transform.position);
             Destroy(gameObject);
-            Count++;
+            collision.gameObject.GetComponent<cat>().Count++;
             print(Count);
         }
     }

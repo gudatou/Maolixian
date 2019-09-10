@@ -21,14 +21,15 @@ public class diamond : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        Vector2 diamond = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
+       Vector2 diamond = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
         Instantiate(DD, diamond, Quaternion.identity);
-        DD.SetActive(true);
+       DD.SetActive(true);
         if (collision.gameObject.CompareTag("Black Cat"))
         {
             AudioSource.PlayClipAtPoint(pick_gem, collision.transform.position);
             Destroy(gameObject);
             Count++;
+            print(Count);
         }
     }
 

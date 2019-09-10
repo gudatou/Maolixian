@@ -61,10 +61,10 @@ public class camera : MonoBehaviour
             Vector3 nextPos = new Vector3(cat_Transform.position.x + 2, cat_Transform.position.y, cat_Transform.position.z - 10);
             m_Transform.position = Vector3.Lerp(m_Transform.position, nextPos, Time.deltaTime * 2);
         }
-        if (cat_Transform.position.y > -5 && cat_Transform.position.y < 5)
+        if (cat_Transform.position.y > -40 && cat_Transform.position.y < 10)
         {
             Vector3 nextPos = new Vector3(cat_Transform.position.x + 6, cat_Transform.position.y, cat_Transform.position.z - 10);
-            m_Transform.position = Vector3.Lerp(m_Transform.position, nextPos, Time.deltaTime);
+            m_Transform.position = Vector3.Lerp(m_Transform.position, nextPos, Time.deltaTime * 2);
         }
     }
 

@@ -13,8 +13,10 @@ public class cat : MonoBehaviour
     private float MaxJumpHeight;
     //public Vector3 dir;
     private bool isDead = false;
-    private bool isJump = false;
+    //private bool isJump = false;
     private bool grounded = false;
+    private Transform tran;
+    private float CurrentHeight;
     public bool canJump = false;
     private bool JetActive = false;
 
@@ -43,25 +45,27 @@ public class cat : MonoBehaviour
     void Update()
     {
         JetActive = Input.GetButton("Fire1");
+        MaxJumpHeight = CurrentHeight + 2.0f;
      }
 
     private void FixedUpdate()
     {
-         //if (transform.position.y >= MaxJumpHeight)
-         //{
-         //   canJump = false;
-         //   isJump = true;
-         //}
-        if(grounded == true)
+        if (transform.position.y >= MaxJumpHeight)
+        {
+            canJump = false;
+            //isJump = true;
+        }
+        if (grounded == true)
         {
             canJump = true ;
         }
 
+
          if (JetActive && canJump)
          {
              rd.AddForce(new Vector2(0, force));
-             isJump = true;
-             anim.SetBool("jump",isJump);
+             //isJump = true;
+             anim.SetBool("grounded",false);
          }
          else
         {
@@ -78,12 +82,16 @@ public class cat : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("car"))
         {
+            CurrentHeight = transform.position.y;
+
             canJump = true;
+            grounded = true;
             anim.SetBool("Grounded", grounded);
         }
         if (collision.gameObject.CompareTag("hinge"))
         {
             canJump = true;
+            grounded = true;
             anim.SetBool("Grounded", grounded);
         }
     }
@@ -106,6 +114,7 @@ public class cat : MonoBehaviour
 
         if(collision.gameObject.CompareTag("missile"))
         {
+            Debug.Log("1");
             isDead = true;
             anim.SetBool("Dead", isDead);
             anim.SetTrigger("DeadOnce");
@@ -116,6 +125,7 @@ public class cat : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("bat"))
         {
+            Debug.Log("ADASDSAD");
             isDead = true;
             anim.SetBool("Dead", isDead);
             anim.SetTrigger("DeadOnce");

@@ -51,20 +51,20 @@ public class camera : MonoBehaviour
 
     void LateUpdate()
     {
-        if (cat_Transform.position.y > 5)
+        if (cat_Transform.position.y > 15)
         {
-            Vector3 nextPos = new Vector3(cat_Transform.position.x + 2, 5, cat_Transform.position.z - 10);
+            Vector3 nextPos = new Vector3(cat_Transform.position.x + 2, 15, cat_Transform.position.z - 10);
             m_Transform.position = Vector3.Lerp(m_Transform.position, nextPos, Time.deltaTime * 2);
         }
         if (cat_Transform.position.y < -10000)
         {
-            Vector3 nextPos = new Vector3(cat_Transform.position.x + 2, cat_Transform.position.y, cat_Transform.position.z - 10);
+            Vector3 nextPos = new Vector3(cat_Transform.position.x + 2, cat_Transform.position.y + 10, cat_Transform.position.z-10);
             m_Transform.position = Vector3.Lerp(m_Transform.position, nextPos, Time.deltaTime * 2);
         }
-        if (cat_Transform.position.y > -5 && cat_Transform.position.y < 5)
+        if (cat_Transform.position.y > -10 && cat_Transform.position.y < 50)
         {
-            Vector3 nextPos = new Vector3(cat_Transform.position.x + 6, cat_Transform.position.y, cat_Transform.position.z - 10);
-            m_Transform.position = Vector3.Lerp(m_Transform.position, nextPos, Time.deltaTime);
+            Vector3 nextPos = new Vector3(cat_Transform.position.x , cat_Transform.position.y, cat_Transform.position.z - 10);
+            m_Transform.position = Vector3.Lerp(m_Transform.position, nextPos, Time.deltaTime * 2);
         }
     }
 
@@ -75,7 +75,7 @@ public class camera : MonoBehaviour
         {
             this.GetComponent<Camera>().orthographicSize -= 0.04f;
         }
-        else if (this.GetComponent<Camera>().orthographicSize <= 5 && time >= EndTime)
+        else if (this.GetComponent<Camera>().orthographicSize <= 6 && time >= EndTime)
         {
             this.GetComponent<Camera>().orthographicSize += 0.04f;
         }

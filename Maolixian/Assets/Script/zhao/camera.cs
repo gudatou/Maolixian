@@ -24,6 +24,9 @@ public class camera : MonoBehaviour
             transform.position.z);
     }*/
 
+
+
+
     public GameObject Keyingwave;
     private Transform m_Transform;
     private Transform cat_Transform;
@@ -88,4 +91,3 @@ public class camera : MonoBehaviour
         }
     }
 }
-

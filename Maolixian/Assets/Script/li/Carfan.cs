@@ -85,6 +85,8 @@ public class Carfan : MonoBehaviour
 
         }
 
+    }
+
 
         void FixedUpdate()
         {
@@ -97,5 +99,5 @@ public class Carfan : MonoBehaviour
 
         }
     }
-}
+
 

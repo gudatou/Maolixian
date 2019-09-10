@@ -4,5 +4,23 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Zhao/MainScene.unity
+    guid: d9e7ad668df028a4e9453b279f53f0d9
+  - enabled: 1
+    path: Assets/Scenes/Zhao/1-1.unity
+    guid: 5735f4127160bde4480e1c24cac28f4e
+  - enabled: 1
+    path: Assets/Scenes/Li/2-1.unity
+    guid: 504061472634c6240b5b6cce04ea1573
+  - enabled: 1
+    path: Assets/Scenes/Ding/3-1.unity
+    guid: f8fb751baa989be4ea4bdf3fd87fedeb
+  - enabled: 1
+    path: Assets/Scenes/Gu/4-1.unity
+    guid: f2aee5f39874e5842b24561d0578a774
+  - enabled: 1
+    path: Assets/Scenes/Zhao/MenuIcon.unity
+    guid: cca5a3766e09bec4c955894a6b65fc34
   m_configObjects: {}

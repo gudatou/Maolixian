@@ -51,43 +51,50 @@ public class camera : MonoBehaviour
 
     void LateUpdate()
     {
-        if (cat_Transform.position.y > 5)
+        if (cat_Transform.position.y > 15)
         {
-            Vector3 nextPos = new Vector3(cat_Transform.position.x + 2, 5, cat_Transform.position.z - 10);
+            Vector3 nextPos = new Vector3(cat_Transform.position.x + 2, 15, cat_Transform.position.z - 10);
             m_Transform.position = Vector3.Lerp(m_Transform.position, nextPos, Time.deltaTime * 2);
         }
         if (cat_Transform.position.y < -10000)
         {
-            Vector3 nextPos = new Vector3(cat_Transform.position.x + 2, cat_Transform.position.y, cat_Transform.position.z - 10);
+            Vector3 nextPos = new Vector3(cat_Transform.position.x + 2, cat_Transform.position.y + 10, cat_Transform.position.z - 10);
             m_Transform.position = Vector3.Lerp(m_Transform.position, nextPos, Time.deltaTime * 2);
         }
+
         if (cat_Transform.position.y > -40 && cat_Transform.position.y < 10)
         {
             Vector3 nextPos = new Vector3(cat_Transform.position.x + 6, cat_Transform.position.y, cat_Transform.position.z - 10);
-            m_Transform.position = Vector3.Lerp(m_Transform.position, nextPos, Time.deltaTime * 2);
+
+            if (cat_Transform.position.y > -10 && cat_Transform.position.y < 50)
+            {
+                Vector3 nextPos = new Vector3(cat_Transform.position.x, cat_Transform.position.y, cat_Transform.position.z - 10);
+
+                m_Transform.position = Vector3.Lerp(m_Transform.position, nextPos, Time.deltaTime * 2);
+            }
+        }
+
+        void FixedUpdate()
+        {
+            time++;
+            if (this.GetComponent<Camera>().orthographicSize >= 2 && StartTime <= time && time <= EndTime)
+            {
+                this.GetComponent<Camera>().orthographicSize -= 0.04f;
+            }
+            else if (this.GetComponent<Camera>().orthographicSize <= 6 && time >= EndTime)
+            {
+                this.GetComponent<Camera>().orthographicSize += 0.04f;
+            }
+        }
+        //private void createKW()
+        //{
+        //    if (Input.GetButtonDown("Fire1"))
+        //    {
+        //        Vector3 mp = Input.mousePosition;
+        //        Vector3 keyW = Camera.main.ScreenToWorldPoint(mp);
+        //        Vector3 newW = new Vector3(keyW.x, keyW.y, 0);
+        //        GameObject KW = Instantiate(Keyingwave, newW, Quaternion.identity);
+        //    }
         }
     }
 
-    void FixedUpdate()
-    {
-        time++;
-        if (this.GetComponent<Camera>().orthographicSize >= 2 && StartTime <= time && time <= EndTime)
-        {
-            this.GetComponent<Camera>().orthographicSize -= 0.04f;
-        }
-        else if (this.GetComponent<Camera>().orthographicSize <= 5 && time >= EndTime)
-        {
-            this.GetComponent<Camera>().orthographicSize += 0.04f;
-        }
-    }
-    private void createKW()
-    {
-        if (Input.GetButtonDown("Fire1"))
-        {
-            Vector3 mp = Input.mousePosition;
-            Vector3 keyW = Camera.main.ScreenToWorldPoint(mp);
-            Vector3 newW = new Vector3(keyW.x, keyW.y, 0);
-            GameObject KW = Instantiate(Keyingwave, newW, Quaternion.identity);
-        }
-    }
-}
